@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    
+    <div style="margin-left: 50px">
+        <h1>Gyakorló feladat. Matematikai műveletek</h1>
+        <div style="margin-left: 300px;">
+            <img id="kek" width="100px" src="./kek.png" alt="kek">
+            <img id="piros" width="100px" src="./piros.png" alt="piros">
+        </div>
+        <div>
+            <img src="./pluszjel.png" alt="plusz">
+            <img id="kek" style="margin-left: 300px;" width="100px" src="./kek.png" alt="kek">
+        </div>
+        <div>
+            <img src="./vonal.png" alt="vonal">
+        </div>
+        <div>
+            <img src="./egyenlo.png" alt="egyenlo">
+            <img id="kek" style="margin-left: 200px;" src="./kek.png" alt="kek">
+            <img id="szurke" src="./szurke.png" alt="szurke">
+        </div>
+        <button type="button" onclick="alap()">Alap</button>
+        <button type="button" onclick="megoldas()">Megoldás</button>
+        <p id="szoveg">Eredmény:</p>
+    </div>
+<script>
+    let kek = 3;
+    let piros = 6;
+    let szurke = 9;
+function megoldas() {
+  document.getElementById("szoveg").innerHTML = "Eredmény: 39";
+  document.getElementById("piros").innerHTML = "6"
+}
+function alap(){
+    document.getElementById("szoveg").innerHTML =" Eredmény:";
+}
+</script>
 </body>
 </html>
