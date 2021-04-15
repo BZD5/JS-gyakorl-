@@ -9,7 +9,7 @@
 </head>
 <body>
     <div style="margin-left: 50px">
-        <h1>Gyakorló feladat. Matematikai műveletek</h1>
+        <h1 id="h1"></h1>
         <div style="margin-left: 300px;">
             <img id="kek" width="100px" src="./kek.png" alt="kek">
             <img id="piros" width="100px" src="./piros.png" alt="piros">
@@ -31,12 +31,15 @@
         <p id="szoveg">Eredmény:</p>
     </div>
 <script>
+
+    document.getElementById("h1").innerHTML = "Gyakorló feladat. Matematikai műveletek";
     let kek = 3;
     let piros = 6;
     let szurke = 9;
 function megoldas() {
   document.getElementById("szoveg").innerHTML = "Eredmény: 39";
   document.getElementById("piros").innerHTML = "6"
+  document.getElementById("kek").innerText = "9";
 }
 function alap(){
     document.getElementById("szoveg").innerHTML =" Eredmény:";
