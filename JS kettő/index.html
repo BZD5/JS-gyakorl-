@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="valami.css">
 </head>
 <body>
     <div>
     <h1>
-        <button class="button1" id="gomb">Change color</button>
+        <button class="button1" id="gomb">Change color!</button>
         <span id="color"></span>
       </h1>
-      <script>
+
+    </div>
+    <h1 id="myHeading"> Kívánság lista </h1>
+  <p class="intro">Kívánságok:</p> 
+  <div class="list">
+     
+      <input type="text" class="dolgok">
+      <div>
+      <button class="hozzaad">Hozzáad</button>
+    <button class="torol"> Töröl </button>
+  </div>
+    <ul>
+      <li>Adidas</li>
+      <li>Nike</li>
+      <li>DRK</li>
+      <li>PUMA</li>
+    </ul>
+   </div>
+<script>
+
 const mydiv=document.querySelector('button'); 
 const mybutton=document.getElementById('gomb');
 
@@ -25,25 +44,6 @@ mybutton.addEventListener('click', () => {
   var rannumber3=Math.floor(Math.random() * 256 ); 
   var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
   mydiv.style.backgroundColor=ranrgb; }); 
-      </script>
-      </div>
-      <h1 id="myHeading"> Kívánság lista </h1>
-    <p class="intro">Kívánság:</p> 
-    <div class="list">
-       
-        <input type="text" class="dolgok">
-        <div>
-        <button class="hozzaad">Hozzáad</button>
-      <button class="torol"> Töröl </button>
-    </div>
-      <ul>
-        <li>Adidas</li>
-        <li>Nike</li>
-        <li>DRK</li>
-        <li>PUMA</li>
-      </ul>
-     </div>
-<script>
 
 
 const userInput = document.querySelector('.userInput');
@@ -78,8 +78,6 @@ addItemButton.addEventListener('click', () => {
     } 
   addItemInput.value = '';
 });
-
-
 
 removeItemButton.addEventListener('click', () => {
   let list = document.querySelector('ul');
