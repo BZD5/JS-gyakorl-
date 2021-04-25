@@ -13,12 +13,10 @@
         <button class="button1" id="gomb">Change color!</button>
         <span id="color"></span>
       </h1>
-
     </div>
-    <h1 id="myHeading"> Kívánság lista </h1>
-  <p class="intro">Kívánságok:</p> 
-  <div class="list">
-     
+    <h1> Kívánság lista </h1>
+  <p class="kivansag">Kívánságok:</p> 
+  <div>
       <input type="text" class="dolgok">
       <div>
       <button class="hozzaad">Hozzáad</button>
@@ -51,11 +49,9 @@ let listItem = document.querySelectorAll('li');
 
 const addItemInput = document.querySelector('.dolgok');
 const addItemButton = document.querySelector('button.hozzaad');
-
 const removeItemButton = document.querySelector('button.torol');
   
 const listItems = document.getElementsByTagName('li');
-
 
 addItemButton.addEventListener('click', () => {
   let list = document.querySelector('ul');
