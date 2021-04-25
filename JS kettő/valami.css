@@ -14,6 +14,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
   }
   .button1{
+      font-size: large;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       width: 400px;
       height: 50px;
       border-radius: 50px;
