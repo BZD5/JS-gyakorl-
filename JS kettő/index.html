@@ -47,25 +47,25 @@ const p = document.querySelector('p.description');
 let listItem = document.querySelectorAll('li');
 
 
-const addItemInput = document.querySelector('.dolgok');
-const addItemButton = document.querySelector('button.hozzaad');
-const removeItemButton = document.querySelector('button.torol');
+const dolgok = document.querySelector('.dolgok');
+const hozzaad = document.querySelector('button.hozzaad');
+const torol = document.querySelector('button.torol');
   
 const listItems = document.getElementsByTagName('li');
 
-addItemButton.addEventListener('click', () => {
+hozzaad.addEventListener('click', () => {
   let list = document.querySelector('ul');
   let li = document.createElement('li');
-  li.textContent = addItemInput.value;
+  li.textContent = dolgok.value;
   let appendedItem = list.appendChild(li);
 
   for(let i = 0; i < appendedItem.length; i++) {
     appendedItem[i].style.color = lastPickedColor;
     } 
-  addItemInput.value = '';
+    dolgok.value = '';
 });
 
-removeItemButton.addEventListener('click', () => {
+torol.addEventListener('click', () => {
   let list = document.querySelector('ul');
   let li = document.querySelector('li:last-child');
   list.removeChild(li);;
