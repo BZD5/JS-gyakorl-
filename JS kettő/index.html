@@ -21,12 +21,12 @@
       <button class="hozzaad">Hozzáad</button>
     <button class="torol"> Töröl </button>
   </div>
-    <ul>
-      <li>Adidas</li>
-      <li>Nike</li>
-      <li>DRK</li>
-      <li>PUMA</li>
-    </ul>
+  <ol>
+    <li>Adidas</li>
+    <li>NIke</li>
+    <li>DRK</li>
+    <li>Puma</li>
+  </ol>
    </div>
 <script>
 const mydiv=document.querySelector('button'); 
@@ -53,7 +53,7 @@ const torol = document.querySelector('button.torol');
 const listItems = document.getElementsByTagName('li');
 
 hozzaad.addEventListener('click', () => {
-  let list = document.querySelector('ul');
+  let list = document.querySelector('ol');
   let li = document.createElement('li');
   li.textContent = dolgok.value;
   let appendedItem = list.appendChild(li);
@@ -65,7 +65,7 @@ hozzaad.addEventListener('click', () => {
 });
 
 torol.addEventListener('click', () => {
-  let list = document.querySelector('ul');
+  let list = document.querySelector('ol');
   let li = document.querySelector('li:last-child');
   list.removeChild(li);;
 });
