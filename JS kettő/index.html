@@ -33,10 +33,10 @@ const mydiv=document.querySelector('button');
 const mybutton=document.getElementById('gomb');
 
 mybutton.addEventListener('click', () => { 
-  var rannumber1=Math.floor(Math.random() * 256 ); 
-  var rannumber2=Math.floor(Math.random() * 256 ); 
-  var rannumber3=Math.floor(Math.random() * 256 ); 
-  var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
+  let rannumber1=Math.floor(Math.random() * 256 ); 
+  let rannumber2=Math.floor(Math.random() * 256 ); 
+  let rannumber3=Math.floor(Math.random() * 256 ); 
+  let ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
   mydiv.style.backgroundColor=ranrgb; }); 
 
 
