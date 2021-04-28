@@ -1,0 +1,16 @@
+td{
+    text-align: right;
+    padding: 10px;
+    border-collapse: collapse;
+    background-color: rgb(223, 221, 241);
+}
+.table{
+    border: indigo 2px solid;
+}
+.tr1{
+    background-color: rgb(180, 174, 218);
+    color: purple;
+}
+body{
+    color: purple;
+}
