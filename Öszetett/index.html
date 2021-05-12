@@ -55,10 +55,27 @@
     </div>
     <div class="oldal2">
         <h3>Kép galéria:</h3>
-        <img class="img2" src="./img/lil_bub.png" alt="Lil Bub">
-        <img class="img1" src="./img/bob.png" alt="Bob az utcamacska">
-        <img class="img1" src="./img/grumpy.png" alt="Grumpy Cat">
-        <img class="img1"  src="./img/colonel.png" alt="Meow ezredes">
+        <div class="row">
+            <div class="column">
+              <img class="img1" src="./img/grumpy.png" alt="Grumpy Cat"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img class="img1" src="./img/lil_bub.png" alt="Lil Bub"  onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img class="img1" src="./img/bob.png" alt="Bob az utcamacska" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img class="img1" src="./img/colonel.png" alt="Meow ezredes"  onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          Forrás:<a href="https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp">w3schools</a>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

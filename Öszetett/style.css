@@ -1,6 +1,7 @@
 .body{
     background-image: url(./img/hatter.png);
     background-repeat: repeat;
+    background-size: 10%;
     width: 250px;
     height: 200px;
     margin-left: 25%;
@@ -63,10 +64,45 @@ h2{
     margin-top: 40px;  
 }
 .img1{
-    width: 20%;
-    margin: 5px;
+    width: 200px;
 }
-.img2{
-    margin-left: 8%;
-    width: 20%;
+#imgtext{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.closebtn{
+    position:absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    display: none;
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+.column img:hover {
+    opacity: 1;
+  }
+.column {
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+  }
+.row{
+    margin-left: 50px;
 }
